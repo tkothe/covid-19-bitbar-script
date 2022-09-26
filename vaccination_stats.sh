@@ -1,8 +1,8 @@
 #!/bin/bash
-PATH=$PATH:/usr/local/bin 
+PATH=$PATH:/usr/local/bin:/opt/homebrew/bin
 
 # set COUNTRIES to comma separated list of ISO country codes
-COUNTRIES=USA,DEU,CZE,LTU,LVA,AUT
+COUNTRIES=USA,DEU,CZE,LTU,LVA,AUT,ESP
 
 export X=$(echo $COUNTRIES | sed -e 's/,/\",\"/g' -e 's/\(.*\)/"\1"/g')
 
